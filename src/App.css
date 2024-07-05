@@ -1,0 +1,200 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  
+}
+
+
+.mainList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+  
+  background: rgb(223, 225, 235);
+  border-radius: 50px;
+  width: 400px; 
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+  bottom: 20px;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.textContent h3 {
+  margin: 10px 0;
+}
+.main .heading{
+  text-align: center;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.textarea label,
+.textarea input {
+  margin-bottom: 10px;
+  width: 90%; 
+  padding: 8px;
+  border-radius: 10px; 
+}
+.textarea .namearea:hover{
+  border-color: aqua;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit .sub,
+.submit .clear {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  bottom: 17px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit .sub {
+  position: relative;
+  background-color: rgb(0, 26, 255);
+  color: white;
+}
+
+.submit .sub:hover {
+  background-color: red;
+}
+
+.submit .clear {
+  background-color: green;
+  color: white;
+}
+
+.submit .clear:hover {
+  background-color: darkorange;
+}
+
+
+.printdetails {
+  width: 100%;
+  margin: auto;
+  background: rgb(223, 225, 235);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  padding: 20px;
+  border-radius: 50px;
+ 
+}
+
+.printdetails h1 {
+  text-align: center;
+  color: #333;
+}
+
+.printdetails ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.printdetails li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.printdetails p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.printbutton, nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+nav button {
+  background-color: #084154;
+}
+
+nav button:hover {
+  background-color: #007BB5;
+}
+
+/* Print specific styles */
+@media print {
+  .printdetails {
+    background-color: #e42a2a;
+    padding: 20px;
+    margin: 0;
+  }
+  .printbutton {
+    display: none;
+  }
+}
+.loading-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid red;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: rot 1s linear infinite;
+  box-shadow: 0px 0px 20px black inset;
+}
+
+@keyframes rot {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.heading{
+  h1{
+    position: relative;
+    text-align: center;
+  }
+}

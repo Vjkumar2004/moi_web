@@ -4,12 +4,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const twilio = require('twilio');
 
-// Initialize Express app
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Connect to MongoDB
+
 mongoose.connect('mongodb://localhost:27017/formdata', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost:27017/formdata', {
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log(err));
 
-// Define Mongoose Schema
+
 const dataSchema = new mongoose.Schema({
     name: String,
     amount: Number,
@@ -28,8 +28,8 @@ const dataSchema = new mongoose.Schema({
 const Data = mongoose.model('Data', dataSchema);
 
 
-const accountSid = 'AC35b6375db49bca49bb0f2cf353f58bdb'; 
-const authToken = 'db33046d88d51b07883f3c21357603f8';
+const accountSid = 'AC35b6375db49bca4*******2cf353f58bdb'; 
+const authToken = 'db33046d88d51b07******c21357603f8';
 const twilioClient = twilio(accountSid, authToken);
 const twilioPhoneNumber = '+12073456621'; 
 
